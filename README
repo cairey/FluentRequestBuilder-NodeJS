@@ -17,8 +17,8 @@ Use like so.
 
         requestBuilder.withHeaders(headers)
         .withData(data)
-        .withPort(3000)
-        .makeRequest('localhost', '/', function(body, response){
+        .withPort(80)
+        .makeRequest('http://google.com', '/', function(body, response){
             res.write(body);
             res.end();  
         });
