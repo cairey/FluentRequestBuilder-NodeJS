@@ -1,0 +1,24 @@
+Fluent Request Builder
+
+Use like so.
+
+
+        var data = JSON.stringify({ 'important': 'data' });
+
+
+        var headers = {
+            'Host': 'www.example.com',
+            'Cookie': null,
+            'Content-Type': 'text/plain',
+            'Content-Length': Buffer.byteLength(data, 'utf8'),
+            'Accept': '*/*'
+        };
+
+
+        requestBuilder.withHeaders(headers)
+        .withData(data)
+        .withPort(3000)
+        .makeRequest('localhost', '/', function(body, response){
+            res.write(body);
+            res.end();  
+        });
