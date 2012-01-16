@@ -2,7 +2,8 @@ Fluent Request Builder
 
 Use like so.
 
-
+        var requestBuilder = require('./requestBuilder');
+        
         var data = JSON.stringify({ 'important': 'data' });
 
 
