@@ -19,6 +19,5 @@ Use like so.
         .withData(data)
         .withPort(80)
         .makeRequest('http://google.com', '/', function(body, response){
-            res.write(body);
-            res.end();  
+            console.write(body);
         });
