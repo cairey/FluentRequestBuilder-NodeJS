@@ -1,11 +1,10 @@
-Fluent Request Builder for NodeJS
+Fluent Request Builder for Node JS
 
 Use like so.
 
         var requestBuilder = require('./requestBuilder');
         
         var data = JSON.stringify({ 'important': 'data' });
-
 
         var headers = {
             'Host': 'www.example.com',
