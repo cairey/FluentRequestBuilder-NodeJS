@@ -1,6 +1,6 @@
 Fluent Request Builder for Node JS
 
-Use like so.
+The http lib can be a bit low level sometimes, so why not make it simpler. Use like so:
 
         var requestBuilder = require('./requestBuilder');
         
