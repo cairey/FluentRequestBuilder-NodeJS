@@ -18,6 +18,8 @@ The http lib can be a bit low level sometimes, so why not make it simpler. Use l
         requestBuilder.withHeaders(headers)
         .withData(data)
         .withPort(80)
+        .withMethod('GET')
+        .isSecure(false)
         .makeRequest('http://google.com', '/', function(body, response){
             console.write(body);
         });
